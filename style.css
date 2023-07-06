@@ -1,0 +1,399 @@
+
+@media (min-width:300px)
+{
+    
+#flash-news-container
+ {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    border: 3px solid  rgb(190, 19, 190);
+    border-radius: 10px;
+    background-color: rgb(16, 211, 211);
+    margin-top: 30px;
+}
+  
+  #flash-news{
+    margin-top:10px;
+    margin-bottom:15px;
+    padding: 0;
+    animation: marquee 25s infinite linear;
+    
+  }
+  
+  #flash-news li {
+    display: inline-flex;
+    margin-right: 20px;
+    font-size: 25px;
+    color: rgb(47, 15, 93);
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+
+  }
+  
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    margin-left: auto;
+    width: 700px;
+    position: absolute;
+    margin-top: 20px;
+    border: 10px solid #dd2626;
+    border-radius: 20px;
+    text-align: center;
+background-image: linear-gradient(45deg,rgb(255, 234, 221),rgb(255, 102, 102));
+    position: relative;
+}
+#wrapper.settings-panel-opened #settings-panel {
+    height: 100%;
+}
+#wrapper.settings-panel-opened #main-panel {
+    filter: blur(5px);
+}
+.time {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 4.5em;
+    font-family: monospace;
+}
+#resetCounter{
+    color: black;
+}
+
+.time-strip {
+    width: 100%;
+    height: 10px;
+    border: 1px solid black;
+}
+
+.controls {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#pomodoro-controls .button-container {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#pomodoro-controls .button-container + .button-container {
+    margin-left: 30px;
+}
+
+
+#pomodoro-controls .button-container .button-time {
+    margin-top: 6px;
+    font-family: monospace;
+    font-size: 13px;
+    color: #999;
+    text-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+}
+
+#counter-controls .button {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#counter-controls .button + .button {
+    margin-left: 30px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(209, 77, 114);
+    background-color: rgb(252, 200, 209);
+    line-height: 50px;
+    font-size: 40px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 20px;
+}
+
+.button:active {
+    background-color: rgba(0,0,0,0.3);
+    transform: scale(0.95);
+}
+
+
+#counter-box .button#startpauseCounter.pause-is-active .pause,
+#counter-box .button#startpauseCounter.start-is-active .start {
+    display: none;
+}
+ .sem{
+    margin-left: auto;
+    width: 700px;
+    height: 350px;
+    position: absolute;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    border: 10px solid #dd2626;
+    border-radius: 20px;
+    text-align: center;
+background-image: linear-gradient(45deg,rgb(255, 234, 221),rgb(255, 102, 102));
+    position: relative;
+    box-shadow: 50px;
+}
+.sem:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);
+}
+.tnp{
+    margin-left: auto;
+    width: 1700px;
+    height: 100px;
+    position: absolute;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    border: 10px solid #dd2626;
+    border-radius: 20px;
+    text-align: center;
+background-image: linear-gradient(45deg,rgb(255, 234, 221),rgb(255, 102, 102));
+    
+}
+.tnp:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);
+}
+.java{
+    float: left;
+    margin-right:28px;
+    margin-left: 75px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border: 10px solid #dd2626;
+    border-radius: 20px;
+    text-align: center;
+background-image: linear-gradient(45deg,rgb(255, 234, 221),rgb(255, 102, 102));
+    position: relative;
+    }
+    .java:hover {
+        transform: translateY(-5px);
+            box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+            .java button {
+                background-color: #af4c66;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                width: 50%;
+                margin-top: 15px;
+                cursor: pointer;
+            }
+            .java button:hover {
+                background-color: #3e8e41;
+            }
+.Web{
+    float: left;
+    margin-right:28px;
+    margin-left: 75px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border: 10px solid #dd2626;
+    border-radius: 20px;
+    text-align: center;
+background-image: linear-gradient(45deg,rgb(255, 234, 221),rgb(255, 102, 102));
+    position: relative;
+    }
+    .Web:hover {
+        transform: translateY(-5px);
+            box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+            .Web:hover {
+                transform: translateY(-5px);
+                    box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+                    .Web button {
+                        background-color: #af4c66;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 10px;
+                        width: 50%;
+                        margin-top: 15px;
+                        cursor: pointer;
+                    }
+                    .Web button:hover {
+                        background-color: #3e8e41;
+                    }
+                
+.dsa{
+    float: right;
+    margin-right:8px;
+    margin-left: 75px;
+    width: 490px;
+    height: 490px;
+    position: absolute;
+    border: 10px solid #dd2626;
+    border-radius: 20px;
+    text-align: center;
+background-image: linear-gradient(45deg,rgb(255, 234, 221),rgb(255, 102, 102));
+    position: relative;
+}
+.dsa:hover {
+    transform: translateY(-5px);
+        box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+        .dsa:hover {
+            transform: translateY(-5px);
+                box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+                .dsa button {
+                    background-color: #af4c66;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px;
+                    width: 50%;
+                    margin-top: 10px;
+                    cursor: pointer;
+                }
+                .dsa button:hover {
+                    background-color: #3e8e41;
+                }
+.leet{
+    float: left;
+    margin-right:18px;
+    margin-left: 75px;
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border: 10px solid #dd2626;
+    border-radius: 20px;
+    text-align: center;
+background-image: linear-gradient(45deg,rgb(255, 234, 221),rgb(255, 102, 102));
+    position: relative;
+    }
+    .leet:hover {
+        transform: translateY(-5px);
+            box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+            .leet:hover {
+                transform: translateY(-5px);
+                    box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+                    .leet button {
+                        background-color: #af4c66;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 10px;
+                        width: 50%;
+                        margin-top: 15px;
+                        cursor: pointer;
+                    }
+                    .leet button:hover {
+                        background-color: #3e8e41;
+                    }
+.gdb{
+    float: left;
+    margin-right:28px;
+    margin-left: 75px;
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    border: 10px solid #dd2626;
+    border-radius: 20px;
+    text-align: center;
+background-image: linear-gradient(45deg,rgb(255, 234, 221),rgb(255, 102, 102));
+    position: relative;
+} .gdb:hover {
+    transform: translateY(-5px);
+        box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+        .gdb:hover {
+            transform: translateY(-5px);
+                box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+                .gdb button {
+                    background-color: #af4c66;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px;
+                    width: 50%;
+                    margin-top: 15px;
+                    cursor: pointer;
+                }
+                .gdb button:hover {
+                    background-color: #3e8e41;
+                }
+.nptel{
+    float: right;
+    margin-right:8px;
+    margin-left: 75px;
+    margin-top: 50px;
+    width: 490px;
+    height: 490px;
+    position: absolute;
+    border: 10px solid #dd2626;
+    border-radius: 20px;
+    text-align: center;
+background-image: linear-gradient(45deg,rgb(255, 234, 221),rgb(255, 102, 102));
+    position: relative;
+}
+.nptel:hover {
+    transform: translateY(-5px);
+        box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+        .nptel:hover {
+            transform: translateY(-5px);
+                box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+                .nptel button {
+                    background-color: #af4c66;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin-top: 10px;
+                    width: 50%;
+                    cursor: pointer;
+                }
+                .nptel button:hover {
+                    background-color: #3e8e41;
+                }
+                 .JAVA{
+                    float: left;
+                    margin-right:28px;
+                    margin-left: 75px;
+                    margin-top: 50px;
+                    width: 500px;
+                    height: 500px;
+                    position: absolute;
+                    border: 10px solid #dd2626;
+                    border-radius: 20px;
+                    text-align: center;
+                background-image: linear-gradient(45deg,rgb(255, 234, 221),rgb(255, 102, 102));
+                    position: relative;
+                } .JAVA:hover {
+                    transform: translateY(-5px);
+                        box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+                        .JAVA:hover {
+                            transform: translateY(-5px);
+                                box-shadow: 8px 16px 0 rgba(255, 249, 249, 0.2);}
+                                .JAVA button {
+                                    background-color: #af4c66;
+                                    color: white;
+                                    border: none;
+                                    border-radius: 5px;
+                                    padding: 10px;
+                                    width: 50%;
+                                    margin-top: 15px;
+                                    cursor: pointer;
+                                }
+                                .JAVA button:hover {
+                                    background-color: #3e8e41;
+                                }
+                            }
